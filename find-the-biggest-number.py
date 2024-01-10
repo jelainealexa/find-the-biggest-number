@@ -6,14 +6,16 @@ second_number = float(input("Enter the second number: "))
 third_number = float(input("Enter the third number: "))
 
 #Find the biggest number among the inputs using if-else statement
-if first_number > second_number:
-    if first_number > third_number:
-        biggest_number = first_number
-elif second_number > first_number:
-    if second_number > third_number:
-        biggest_number = second_number
-else:
-    biggest_number = third_number
+def find_biggest_number(first_number, second_number, third_number):
+    if first_number > second_number:
+        if first_number > third_number:
+            return first_number
+    elif second_number > third_number:
+        return second_number
+    else:
+        return third_number
+
+biggest_number = find_biggest_number(first_number, second_number, third_number)
 
 #Display the biggest number
-print("Among the numbers you entered, the largest is:", biggest_number)
+print("Among the numbers you entered, the biggest is:", biggest_number)
