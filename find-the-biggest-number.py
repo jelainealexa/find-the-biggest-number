@@ -16,3 +16,4 @@ else:
     biggest_number = third_number
 
 #Display the biggest number
+print("Among the numbers you entered, the largest is:", biggest_number)
