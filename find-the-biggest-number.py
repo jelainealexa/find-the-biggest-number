@@ -8,11 +8,11 @@ third_number = float(input("Enter the third number: "))
 #Find the biggest number among the inputs using if-else statement
 if first_number > second_number:
     if first_number > third_number:
-      print("The biggest number is", first_number)
+        biggest_number = first_number
 elif second_number > first_number:
     if second_number > third_number:
-        print("The biggest number is", second_number)
+        biggest_number = second_number
 else:
-    print("The biggest number is", third_number)
+    biggest_number = third_number
 
 #Display the biggest number
