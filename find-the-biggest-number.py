@@ -66,7 +66,7 @@ def find_and_update_result():
 def continue_button_click():
     find_and_update_result()
 
-continue_button = customtkinter.CTkButton(window, command=continue_button_click, text="Continue", corner_radius=15, cursor="hand2")
+continue_button = customtkinter.CTkButton(window, command=continue_button_click, text="Continue", font=('Poppins', 20, 'bold'), fg_color="#E8175D", hover_color="#CC527A", bg_color="#000000", corner_radius=15, cursor="hand2")
 continue_button.pack(pady=5)
 
 window.mainloop()
