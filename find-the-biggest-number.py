@@ -65,10 +65,23 @@ def find_and_update_result():
 
         result_label.configure(text=f"The largest number is {biggest_number}!")
 
+        tryagain_button.pack()
         continue_button.pack_forget()
 
     except ValueError:
         result_label.configure(text="Oops! Please enter valid numbers")
+
+#"Try again" button
+def tryagain_button_click():
+    result_label.configure(text="", text_color="#E8175D")
+    enter_first.delete(0, END)
+    enter_second.delete(0, END)
+    enter_third.delete(0, END)
+    tryagain_button.pack_forget()
+    continue_button.pack(pady=5)
+
+tryagain_button = customtkinter.CTkButton(window, command=tryagain_button_click, text="Try again", corner_radius=15, cursor="hand2")
+
 
 #"Continue" button
 def continue_button_click():
