@@ -64,10 +64,10 @@ def find_and_update_result():
         biggest_number = find_biggest_number(first_number, second_number, third_number)
 
         #Loading message
-        result_label.configure(text="Loading...", text_color="#CC527A")
+        result_label.configure(text="Drum roll, please...", text_color="#CC527A")
         window.update_idletasks()
 
-        window.after(2000)
+        window.after(2500)
 
         result_label.configure(text=f"The largest number is {biggest_number}!")
 
