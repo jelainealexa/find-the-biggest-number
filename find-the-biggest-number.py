@@ -63,6 +63,12 @@ def find_and_update_result():
 
         biggest_number = find_biggest_number(first_number, second_number, third_number)
 
+        #Loading message
+        result_label.configure(text="Loading...", text_color="#CC527A")
+        window.update_idletasks()
+
+        window.after(2000)
+
         result_label.configure(text=f"The largest number is {biggest_number}!")
 
         tryagain_button.pack()
