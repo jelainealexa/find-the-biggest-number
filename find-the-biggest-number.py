@@ -9,8 +9,9 @@ window.geometry("750x750")
 window.config(bg="#000000")
 window.resizable(False, False)
 
-#Labels
+#Ask user to input three numbers
 
+#Labels
 title_label = customtkinter.CTkLabel(window, text="Finding the Digits!", font=('Poppins', 30, 'bold'), text_color="#E8175D", bg_color="#000000")
 title_label.pack()
 
@@ -24,16 +25,19 @@ label_third = customtkinter.CTkLabel(window, text="Enter the third number:", fon
 label_third.pack()
 
 #Entries
+enter_first = Entry(window,width=15, justify='center')
+enter_first.pack()
+
+enter_second = Entry(window, width=15, justify='center')
+enter_second.pack()
+
+enter_third = Entry(window, width=15, justify='center')
+enter_third.pack()
 
 #Result
 
 result_label = customtkinter.CTkLabel(window, text="")
 result_label.pack()
-
-#Ask user to input three numbers
-first_number = float(input("Enter the first number: "))
-second_number = float(input("Enter the second number: "))
-third_number = float(input("Enter the third number: "))
 
 #Find the biggest number among the inputs using if-else statement
 def find_biggest_number(first_number, second_number, third_number):
