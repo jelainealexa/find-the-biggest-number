@@ -37,6 +37,12 @@ enter_third.pack()
 result_label = customtkinter.CTkLabel(window, text="", font=("Poppins", 25, 'bold'), text_color="#E8175D", bg_color="#000000")
 result_label.pack(pady=20)
 
+#Title design
+def blink_title(color, blink_count):
+    if blink_count > 0:
+        title_label.configure(text_color=color)
+        window.after(500, blink_title, "#E8175D" if color == "#CC527A" else "#CC527A", blink_count - 1)
+
 #Find the biggest number among the inputs using if-else statement
 def find_biggest_number(first_number, second_number, third_number):
     if first_number > second_number:
