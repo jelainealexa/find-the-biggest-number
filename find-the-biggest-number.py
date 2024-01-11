@@ -80,8 +80,7 @@ def tryagain_button_click():
     tryagain_button.pack_forget()
     continue_button.pack(pady=5)
 
-tryagain_button = customtkinter.CTkButton(window, command=tryagain_button_click, text="Try again", corner_radius=15, cursor="hand2")
-
+tryagain_button = customtkinter.CTkButton(window, command=tryagain_button_click, text="Try again", font=('Poppins', 20, 'bold'), fg_color="#E8175D", hover_color="#CC527A", bg_color="#000000", corner_radius=15, cursor="hand2")
 
 #"Continue" button
 def continue_button_click():
