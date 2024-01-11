@@ -55,12 +55,12 @@ def find_and_update_result():
 
         biggest_number = find_biggest_number(first_number, second_number, third_number)
 
-        result_label.config(text=f"The largest number is {biggest_number}!")
+        result_label.configure(text=f"The largest number is {biggest_number}!")
 
         continue_button.pack_forget()
 
     except ValueError:
-        result_label.config(text="Oops! Please enter valid numbers")
+        result_label.configure(text="Oops! Please enter valid numbers")
 
 #"Continue" button
 def continue_button_click():
