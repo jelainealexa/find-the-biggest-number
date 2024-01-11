@@ -64,4 +64,11 @@ def find_and_update_result():
     except ValueError:
         result_label.config(text="Please enter valid numbers")
 
+#"Continue" button
+def continue_button_click():
+    find_and_update_result()
+
+continue_button = customtkinter.CTkButton(window, command=continue_button_click, text="Continue", corner_radius=15, cursor="hand2")
+continue_button.pack()
+
 window.mainloop()
