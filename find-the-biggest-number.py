@@ -11,10 +11,10 @@ window.resizable(False, False)
 
 #Labels
 
-title_label = customtkinter.CTkLabel(window, text="Finding the Digits!")
+title_label = customtkinter.CTkLabel(window, text="Finding the Digits!", font=('Poppins', 30, 'bold'), text_color="#E8175D", bg_color="#000000")
 title_label.pack()
 
-label_first = customtkinter.CTkLabel(window, text="Enter the first number:")
+label_first = customtkinter.CTkLabel(window, text="Enter the first number:", font=('Poppins', 14, 'bold'), text_color="#CC527A", bg_color="#000000")
 label_first.pack()
 
 label_second = customtkinter.CTkLabel(window, text="Enter the second number:", font=('Poppins', 14, 'bold'), text_color="#CC527A", bg_color="#000000")
