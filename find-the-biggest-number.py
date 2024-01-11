@@ -69,13 +69,13 @@ def find_and_update_result():
 
         window.after(2500)
 
-        result_label.configure(text=f"The largest number is {biggest_number}!")
-
+        result_label.configure(text=f"The largest number is {biggest_number}!", text_color="#E8175D")
+        
         tryagain_button.pack()
         continue_button.pack_forget()
 
     except ValueError:
-        result_label.configure(text="Oops! Please enter valid numbers")
+        result_label.configure(text="Oops! Please enter valid numbers.")
 
 #"Try again" button
 def tryagain_button_click():
