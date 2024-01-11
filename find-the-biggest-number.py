@@ -25,18 +25,18 @@ label_third = customtkinter.CTkLabel(window, text="Enter the third number:", fon
 label_third.pack(pady=5)
 
 #Entries
-enter_first = Entry(window,width=15, justify='center')
+enter_first = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
 enter_first.pack()
 
-enter_second = Entry(window, width=15, justify='center')
+enter_second = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
 enter_second.pack()
 
-enter_third = Entry(window, width=15, justify='center')
+enter_third = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
 enter_third.pack()
 
 #Result
-result_label = customtkinter.CTkLabel(window, text="")
-result_label.pack()
+result_label = customtkinter.CTkLabel(window, text="", font=("Poppins", 25, 'bold'), text_color="#E8175D", bg_color="#000000")
+result_label.pack(pady=20)
 
 #Find the biggest number among the inputs using if-else statement
 def find_biggest_number(first_number, second_number, third_number):
