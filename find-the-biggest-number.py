@@ -13,26 +13,26 @@ window.resizable(False, False)
 
 #Labels
 title_label = customtkinter.CTkLabel(window, text="Finding the Digits!", font=('Poppins', 30, 'bold'), text_color="#E8175D", bg_color="#000000")
-title_label.pack(pady=15)
+title_label.grid(row=0, column=0, columnspan=2, pady=15)
 
 label_first = customtkinter.CTkLabel(window, text="Enter the first number:", font=('Poppins', 14, 'bold'), text_color="#CC527A", bg_color="#000000")
-label_first.pack(pady=5)
+label_first.grid(row=1, column=0, pady=5)
 
 label_second = customtkinter.CTkLabel(window, text="Enter the second number:", font=('Poppins', 14, 'bold'), text_color="#CC527A", bg_color="#000000")
-label_second.pack(pady=5)
+label_second.grid(row=2, column=0, pady=5)
 
 label_third = customtkinter.CTkLabel(window, text="Enter the third number:", font=('Poppins', 14, 'bold'), text_color="#CC527A", bg_color="#000000")
-label_third.pack(pady=5)
+label_third.grid(row=3, column=0, pady=5)
 
 #Entries
 enter_first = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
-enter_first.pack()
+enter_first.grid(row=1, column=1, pady=5)
 
 enter_second = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
-enter_second.pack()
+enter_second.grid(row=2, column=1, pady=5)
 
 enter_third = Entry(window, font=('Poppins', 14, 'bold'), width=15, justify='center', fg='#383838', bg='#E3E3E3')
-enter_third.pack()
+enter_third.grid(row=3, column=1, pady=5)
 
 #Result
 result_label = customtkinter.CTkLabel(window, text="", font=("Poppins", 25, 'bold'), text_color="#E8175D", bg_color="#000000")
