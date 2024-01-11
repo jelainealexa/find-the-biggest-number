@@ -23,10 +23,15 @@ def find_biggest_number(first_number, second_number, third_number):
         return second_number
     else:
         return third_number
+    
+def find_and_update_result():
+    try:
+        first_number = float(enter_first.get())
+        second_number = float(enter_second.get())
+        third_number = float(enter_third.get())
 
-biggest_number = find_biggest_number(first_number, second_number, third_number)
+        biggest_number = find_biggest_number(first_number, second_number, third_number)
 
-#Display the biggest number
-print("Among the numbers you entered, the biggest is:", biggest_number)
+        print(f"The largest number is {biggest_number}!", text_color="#E8175D")
 
 window.mainloop()
